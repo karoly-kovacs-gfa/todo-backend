@@ -6,12 +6,6 @@ plugins {
     kotlin("plugin.spring") version "1.6.0"
 }
 
-tasks.withType<Jar> {
-    manifest {
-        attributes["Main-Class"] = "com.kare.todobackend.TodoBackendApplication"
-    }
-}
-
 
 group = "com.kare"
 version = "0.0.1-SNAPSHOT"
