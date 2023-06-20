@@ -2,6 +2,8 @@ plugins {
     java
     id("org.springframework.boot") version "2.7.12"
     id("io.spring.dependency-management") version "1.0.15.RELEASE"
+    kotlin("jvm") version "1.6.0"
+    kotlin("plugin.spring") version "1.6.0"
 }
 
 tasks.withType<Jar> {
@@ -9,6 +11,7 @@ tasks.withType<Jar> {
         attributes["Main-Class"] = "com.kare.todobackend.TodoBackendApplication"
     }
 }
+
 
 group = "com.kare"
 version = "0.0.1-SNAPSHOT"
