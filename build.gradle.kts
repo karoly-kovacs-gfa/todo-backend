@@ -6,7 +6,7 @@ plugins {
 
 tasks.withType<Jar> {
     manifest {
-        attributes["Main-Class"] = "com.kare.todobackend"
+        attributes["Main-Class"] = "com.kare.todobackend.TodoBackendApplication"
     }
 }
 
