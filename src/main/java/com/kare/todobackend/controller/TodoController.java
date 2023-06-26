@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 public class TodoController {
 
@@ -27,7 +28,7 @@ public class TodoController {
     }
 
     @PostMapping("/todos")
-    public ResponseEntity<Todo> saveTodo(@RequestBody TodoDTO todo) {
-        return new ResponseEntity<>(todoService.saveDTO(todo), HttpStatus.CREATED);
+    public ResponseEntity<Todo> saveTodo(@RequestBody TodoDTO todoDTO) {
+        return new ResponseEntity<>(todoService.saveDTO(todoDTO), HttpStatus.CREATED);
     }
 }
